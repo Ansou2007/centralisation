@@ -28,6 +28,8 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">  
+  {{-- Jquery --}}
+  <script src="{{asset('assets/js/jquery.js')}}"></script>
 </head>
 <body>
 

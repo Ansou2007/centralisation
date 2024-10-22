@@ -1,15 +1,11 @@
 @extends('layouts.master')
-
-
 @section('contenu')
     <section class="section">
         <div class="row">
             <div class="col-lg-12">
-
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Equipement</h5>
-
                         <!-- Table with stripped rows -->
                         <div class="datatable-wrapper datatable-loading no-footer sortable searchable fixed-columns">
                             <a href="{{route('equipement.create')}}" class="btn btn-primary">Ajouter</a>
@@ -36,18 +32,20 @@
                                             <td>{{$equipement->marque	}}</td>
                                             <td class="green">{{$equipement->model	}}</td>
                                             <td class="green">
-                                                <a href="{{$equipement->url	}}" target="_blank">Voir</a>
+                                                 @if ($equipement->url)
+                                                 <a href="{{$equipement->url}}" target="_blank">Voir</a>
+                                                 @else
+                                                     <p> <span class="badge bg-danger">Indisponible</span></p>
+                                                 @endif
                                             </td>
                                             <td class="green"><span class="badge rounded-pill bg-success">{{$equipement->type_equipement}}</span></td>
                                             <td class="green">
-                                                <a href="" class="btn btn-primary">Editer</a>
-                                                <a href="" class="btn btn-danger">Supprimer</a>
+                                                <a href="{{route('equipement.show',$equipement->id)}}" class="btn btn-primary">Editer</a>
+                                                <a href="{{route('equipement.delete',$equipement->id)}}" class="btn btn-danger btn delete">Supprimer</a>
                                             </td>
                                         </tr>  
                                         @endforeach                                     
-                                       
-                                        
-                                       
+                                                                              
                                     </tbody>
                                 </table>
                             </div>
@@ -60,4 +58,7 @@
             </div>
         </div>
     </section>
+    <script>
+        
+    </script>
 @endsection

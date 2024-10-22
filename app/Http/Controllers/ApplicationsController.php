@@ -24,4 +24,15 @@ class ApplicationsController extends Controller
         $application->save();
         return to_route('application');
     }
+
+    public function show($id){
+        $application = Applications::findOrFail($id);
+        return view('application.edit',compact('application'));
+    }
+
+    public function destroy($id){
+        $application = Applications::findOrFail($id);
+        $application->delete();
+        return to_route('application');
+    }
 }

@@ -46,8 +46,8 @@
                                                 <a href="{{$service->url}}" class="btn btn-info" target="_blank">Voir</a>
                                             </td>
                                             <td>
-                                                <a href="" class="btn btn-primary">Editer</a>
-                                                <a href="" class="btn btn-danger">Supprimer</a>
+                                                <a href="{{route('service.show',$service->id)}}" class="btn btn-primary">Editer</a>
+                                                <a href="{{route('service.delete',$service->id)}}" class="btn btn-danger">Supprimer</a>
                                             </td>
                                         </tr>  
                                         @endforeach 

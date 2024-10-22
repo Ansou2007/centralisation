@@ -1,11 +1,8 @@
 @extends('layouts.master')
-
-
 @section('contenu')
     <section class="section">
         <div class="row">
             <div class="col-lg-12">
-
                 <div class="card">
 
                             <div class="card-body">
@@ -31,11 +28,11 @@
                                   </div>
                                 <div class="col-md-6">
                                   <label for="inputEmail5" class="form-label">Nom Equipement</label>
-                                  <input type="text" class="form-control" id="nom" name="nom">
+                                  <input type="text" class="form-control" id="nom" name="nom" required>
                                 </div>
                                 <div class="col-md-6">
                                   <label for="inputPassword5" class="form-label">Adresse Url</label>
-                                  <input type="url" class="form-control" id="url" name="url">
+                                  <input type="url" class="form-control" id="url" name="url" >
                                 </div>
                                 <div class="col-6">
                                   <label for="inputAddress5" class="form-label">Marque</label>
@@ -62,4 +59,7 @@
             </div>
         </div>
     </section>
+    <script>
+
+    </script>
 @endsection

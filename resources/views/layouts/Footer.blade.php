@@ -20,7 +20,10 @@
 
   <!-- Template Main JS File -->
   <script src="{{asset('assets/js/main.js')}}"></script>
-
+  {{-- Jquery --}}
+  <script src="{{asset('assets/js/jquery.js')}}"></script>
+  {{-- Sweet Alert --}}
+  <script src="{{asset('assets/js/sweet.js')}}"></script>
 </body>
 
 </html>

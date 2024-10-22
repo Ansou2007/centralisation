@@ -27,4 +27,16 @@ class ServicesController extends Controller
         return to_route('service');
 
     }
+
+
+    public function show($id){
+        $service = Services::findOrFail($id);
+        return view('services.edit',compact('service'));
+    }
+
+    public function destroy($id){
+        $service = Services::findOrFail($id);
+        $service->delete();
+        return to_route('service');
+    }
 }

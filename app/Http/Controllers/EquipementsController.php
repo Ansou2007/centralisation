@@ -26,8 +26,17 @@ class EquipementsController extends Controller
         $equipement->adresse_mac = $request->mac;
         $equipement->type_equipement = $request->type_equipement;
         $equipement->save();
-        return to_route('equipement');
+        return to_route('equipement');        
+    }
 
-        
+    public function show($id){
+        $equipement = Equipements::findOrFail($id);
+        return view('equipement.edit',compact('equipement'));
+    }
+
+    public function destroy($id){
+        $equipement = Equipements::findOrFail($id);
+        $equipement->delete();
+        return to_route('equipement');
     }
 }
