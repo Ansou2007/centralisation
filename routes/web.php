@@ -9,8 +9,8 @@ use App\Http\Controllers\ServicesController;
 use App\Models\Equipements;
 use Illuminate\Support\Facades\Route;
 
-/* Route::get('', [AuthenticatedSessionController::class, 'create'])
-->name('login'); */
+Route::get('', [AuthenticatedSessionController::class, 'create'])
+->name('login'); 
 
 /* Route::get('/dashboard', function () {
     return view('dashboard');

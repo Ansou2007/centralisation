@@ -34,7 +34,7 @@
 
                 <div class="d-flex align-items-center">
                   <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                    <i class="bi bi-cart"></i>
+                    <i class="bi bi-tools"></i>
                   </div>
                   <div class="ps-3">
                     <h6>{{$nbre_equipement}}</h6>
@@ -55,7 +55,7 @@
 
                 <div class="d-flex align-items-center">
                   <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                    <i class="bi bi-currency-dollar"></i>
+                    <i class="bi bi-laptop"></i>
                   </div>
                   <div class="ps-3">
                     <h6>{{$nbre_application}}</h6>
