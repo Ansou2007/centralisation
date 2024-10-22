@@ -1,6 +1,4 @@
 @extends('layouts.master')
-
-
 @section('contenu')
     <section class="section">
         <div class="row">
