@@ -33,7 +33,7 @@
                                             <td class="green">{{$equipement->model	}}</td>
                                             <td class="green">
                                                  @if ($equipement->url)
-                                                 <a href="{{$equipement->url}}" target="_blank">Voir</a>
+                                                 <a href="{{$equipement->url}}" target="_blank">Acceder</a>
                                                  @else
                                                      <p> <span class="badge bg-danger">Indisponible</span></p>
                                                  @endif

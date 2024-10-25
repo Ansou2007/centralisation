@@ -32,7 +32,7 @@
                                                 {{$application->nom}}
                                             </td>
                                             <td>
-                                                <a href="{{$application->url}}" class="btn btn-info" target="_blank">Voir</a>
+                                                <a href="{{$application->url}}" class="btn btn-info" target="_blank">Acceder</a>
                                             </td>
                                             <td>
                                                 <a href="{{route('application.show',$application->id)}}" class="btn btn-primary">Editer</a>
